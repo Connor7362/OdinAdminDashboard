@@ -11,21 +11,22 @@
 
         <div id="panel">
             <div id="title-block">
-                <img src="" alt="">
+                <img src="./icons/view-dashboard.svg" id="dash-icon">
                 <div id="title">Dashboard</div>
             </div>
 
             <ul>
-                <li><img src="" alt="" class="icon"><button class="clickable">Home</button></li>
-                <li><img src="" alt="" class="icon"><button class="clickable">Profile</button></li>
-                <li><img src="" alt="" class="icon"><button class="clickable">Messages</button></li>
-                <li><img src="" alt="" class="icon"><button class="clickable">History</button></li>
-                <li><img src="" alt="" class="icon"><button class="clickable">Tasks</button></li>
-                <li><img src="" alt="" class="icon"><button class="clickable">Communities</button></li>
-                <li></li>
-                <li><img src="" alt="" class="icon"><button class="clickable">Settings</button></li>
-                <li><img src="" alt="" class="icon"><button class="clickable">Support</button></li>
-                <li><img src="" alt="" class="icon"><button class="clickable">Privacy</button></li>
+                <li class="spacer"></li>
+                <li><img src="./icons/home.svg" alt="" class="icon"><button class="clickable">Home</button></li>
+                <li><img src="./icons/card-account-details.svg" alt="" class="icon"><button class="clickable">Profile</button></li>
+                <li><img src="./icons/message-reply.svg" alt="" class="icon"><button class="clickable">Messages</button></li>
+                <li><img src="./icons/history.svg" alt="" class="icon"><button class="clickable">History</button></li>
+                <li><img src="./icons/file-multiple-outline.svg" alt="" class="icon"><button class="clickable">Tasks</button></li>
+                <li><img src="./icons/account-group.svg" alt="" class="icon"><button class="clickable">Communities</button></li>
+                <li class="spacer"></li>
+                <li><img src="./icons/cog.svg" alt="" class="icon"><button class="clickable">Settings</button></li>
+                <li><img src="./icons/help-box-outline.svg" alt="" class="icon"><button class="clickable">Support</button></li>
+                <li><img src="./icons/lock.svg" alt="" class="icon"><button class="clickable">Privacy</button></li>
             </ul>
 
 
@@ -33,6 +34,41 @@
         </div>
 
         <div id="header">
+            <div id="top">
+                <div id="search">
+                    <img src="./icons/magnify.svg" id="glass">
+                    <input type="search" id="search-bar">
+                </div>
+                <div id="profile">
+                    <img src="./icons/bell-badge-outline.svg" id="small-bell">
+                    <img src="./icons/account-circle-outline.svg" id="small-icon">
+                    <div id="name">Someone Random</div>
+                </div>
+            </div>
+            <div id="bottom">
+                <div id="greeting-total">
+                    <img src="./icons/account-circle-outline.svg" id="big-icon">
+                    <div id="greeting">
+                        <div id="hi">
+                            Hi there,
+                        </div>
+                        <div id="at">
+                            Somone Random (@someone)
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div id="upload">
+                    <button id="new-btn" class="media-btn">New</button>
+                    <button id="upload-btn" class="media-btn">Upload</button>
+                    <button id="share-btn" class="media-btn">Share</button>
+
+                </div>
+                
+            
+            </div>
+            
             
         </div>
 
@@ -41,12 +77,117 @@
             <div class="title">Announcements</div>
 
             <div id="projects">
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
+                <div class="project">
+                    <div class="project-title">Admin Dashboard</div>
+                    <div class="project-content">This is a dash creaeted for the odin project to get used to using css grids and other various tools like transforms , svgs and other items in css and html</div>
+                </div>
+                <div class="project">
+                    <div class="project-title">Rock Paper Scissors</div>
+                    <div class="project-content">This was a rock paper scissors game made in JS run in a web console without a visual side and then later a visual side was added</div>
+                </div>
+                <div class="project">
+                    <div class="project-title">Embedded Systems</div>
+                    <div class="project-content">Some various embedded systems projects</div>
+                </div>
+                <div class="project">
+                    <div class="project-title">Auction Project</div>
+                    <div class="project-content">This was a project created for a software architecture class were we used websockets to communicate from the server to the clients that connected in order to create a auction site that worked seamlessly to display products on multiple devices and to deal with bidding and when users would win an item and other various tasks that come with an auction platform</div>
+                </div>
+                <div class="project">
+                    <div class="project-title">Comptetiton Workout App</div>
+                    <div class="project-content">This is a workout app to connect students to other students who workout and compete against eachother with friends and get ranked</div>
+                </div>
+                <div class="project">
+                    <div class="project-title">Social Media App</div>
+                    <div class="project-content">A random social media app recreation that I will be making for this course </div>
+                </div>
+            </div>
+
+            <div id="announcements">
+                <div id="feeds">
+                    <div class="announcement">
+                        <div class="announce-title">
+                            Site Mainenance
+                        </div>
+                        <div class="announce-feed">
+                            this is a lot of some random stuff that we are making to put a lot of other stuff in here as it si so mych rando
+                        </div>
+                    </div>
+                    <div class="announcement">
+                        <div class="announce-title">
+                            Community hot dog day 
+                        </div>
+                        <div class="announce-feed">
+                            This is the whoel thing were joey chestnaught will eata  ton of hotdogs and do a bunch of stuff with that aswell and do some other food challanges
+                        </div>
+                    </div>
+                    <div class="announcement">
+                        <div class="announce-title">
+                            Some more announcements
+                        </div>
+                        <div class="announce-feed">
+                            This just goes to show you that I am continuing to make more things that work correctly and probably will in the future.
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="trending">
+                    <div class="trend-title">Trending</div>
+                    <div class="trend-feed">
+                        <div class="trending-account">
+                            <img src="./icons/account-circle-outline.svg" class="trend-icon">
+                             <div class="trend-info">
+                                <div class="trend-at">
+                                @rando1
+                                </div>
+                                <div class="trend-project">
+                                     project - one
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="trending-account">
+                            <img src="./icons/account-circle-outline.svg" class="trend-icon">
+                             <div class="trend-info">
+                                <div class="trend-at">
+                                @rando2
+                                </div>
+                                <div class="trend-project">
+                                     project - two
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="trending-account">
+                            <img src="./icons/account-circle-outline.svg" class="trend-icon">
+                             <div class="trend-info">
+                                <div class="trend-at">
+                                @rando3
+                                </div>
+                                <div class="trend-project">
+                                     project - three
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="trending-account">
+                            <img src="./icons/account-circle-outline.svg" class="trend-icon">
+                             <div class="trend-info">
+                                <div class="trend-at">
+                                @rando4
+                                </div>
+                                <div class="trend-project">
+                                     project - four
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+                </div>
+
             </div>
 
         </div>

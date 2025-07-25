@@ -6,16 +6,81 @@
 #container{
     display: grid;
     grid-template-columns: 1fr 5fr;   
-    grid-template-rows: minmax(auto, 100px) 1fr;
+    grid-template-rows: minmax(auto, 150px) 1fr;
     min-height: 100vh;
 }
 
 #panel{
-    background-color: lightskyblue;
+    background-color: rgb(27, 104, 151);
     grid-column: 1/2;
     grid-row: 1/3;
     min-width: 200px; /* this shoudl keep the pannel atlest fitting the words*/
 
+}
+
+#panel{
+    display: flex;
+    flex-direction: column;
+}
+
+#title-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+#dash-icon{
+    filter: brightness(0) invert(1);
+    height: 60px;
+}
+
+ul>li{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    padding-left: 20px;
+    
+}
+
+.clickable{
+    margin-left: 20px;
+    background-color: rgb(27, 104, 151);
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.clickable:hover{
+    
+   
+    color: white;
+    transform: translateY(-4px);
+   
+
+}
+
+
+.spacer{
+    height: 40px;
+}
+
+.icon{
+    filter: brightness(0) invert(1);
+    height: 30px;
 }
 
 #header{
@@ -24,13 +89,141 @@
     grid-column: 2/3;
     grid-row: 1/2;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
 }
+
+#top{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#search{
+    
+    display: flex;
+    align-items: center;  /* vertical alignment */
+    gap: 10px;            /* space between bar and icon */
+    margin-top: 20px;
+    margin-left: 50px;
+
+}
+
+#glass{
+    height: 25px;
+    margin-right: 20px;
+    
+    
+}
+
+#search-bar{
+    background-color: rgba(167, 156, 156, 0.445);
+    border-radius: 30px;
+    padding-left: 15px;
+    height: 30px;
+    width: 800px;
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+#profile{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#small-bell{
+    height: 40px;
+}
+
+#small-icon{
+    height: 40px;
+}
+
+#name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 60px;
+}
+
+#bottom{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#greeting-total{
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+
+}
+
+#greeting{
+    margin-left: 20px;
+}
+
+#hi{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#at{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#big-icon{
+    height: 80px;
+}
+
+#upload{
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.media-btn{
+    height: 40px;
+    width: 100px;
+    background-color: rgba(27 , 104, 151);
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+
+}
+
+.media-btn:hover {
+    outline: 3px solid #ced8e2b4;
+    outline-offset: 2px;
+}
+
+
 
 #content{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 17fr;
     background-color: rgba(182, 179, 179, 0.418);
+    gap: 15px;
     
 }
 
@@ -39,20 +232,133 @@
     font-weight: bold;
     align-self: center;
     padding-left: 20px;
+    margin-top: 20px;
+    
 }
 
 #projects{
      padding-left: 20px;
     padding-bottom: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
 }
 
 .project{
     background-color: white;
-    border-radius: 20px;
-    border-left: 20px solid orange;
+    border-radius: 10px;
+    border-left: 10px solid orange;
     height: 250px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    padding: 25px;
+}
+
+.project:hover{
+    transform: translateY(-6px);
+}
+
+.project-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-content{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#announcements{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    
+    
+}
+
+#feeds{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    align-self: start;
+    gap: 25px;
+    padding: 25px;
+    
+}
+
+.announcement{
+   
+}
+
+.announce-title{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.announce-feed{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+
+#trending{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+
+}
+
+.trend-title{
+    font-size: 25px;
+    font-weight: bold;
+    align-self: center;
+   
+    margin-top: 20px;
+}
+
+.trending-account{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    align-items: center;
+}
+
+.trend-feed{
+    
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+.trend-icon{
+    height: 50px;
+    margin-right: 20px;
+}
+
+.trend-at{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.trend-project{
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.trend-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
